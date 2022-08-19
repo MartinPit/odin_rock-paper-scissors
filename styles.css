@@ -1,0 +1,136 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    background-color: #FFE0B5;
+}
+
+.header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px 350px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #2D3047;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    gap: 50px;
+    color: #2D3047;
+}
+
+.info {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.points {
+    font-size: 24px;
+    font-weight: bolder;
+    padding-top: 50px;
+}
+
+.game {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 150px;
+    gap: 10px;
+    padding-bottom: 50px;
+    color: #2D3047;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+@keyframes gradient {
+    0% {
+        background: radial-gradient(circle at center, rgba( 255, 125 , 125, 0 ) 0%, #fff 0%, #fff 100%);
+    }
+    25% {
+        background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.3 ) 24%, #fff 25%, #fff 100%);
+    }
+    50% {
+        background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.5 ) 49%, #fff 50%, #fff 100%);
+    }
+    75% {
+        background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.8 ) 74%, #fff 75%, #fff 100%);
+    }
+    100% {
+        color: #fff;
+        background: radial-gradient(circle at center, #f88 99%, #fff 100%, #fff 100%);
+    }
+}
+
+button {
+    width: 140px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #666;
+    box-shadow: 0 6px 6px #2D3047;
+    outline: none;
+}
+.button:focus {
+    /* set time duration to your needs */
+    animation: gradient 100ms;
+    background: #CA2E55;
+    color: #fff;
+    box-shadow: none;
+}
+
+.button-ai {'
+    width: 140px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #666;
+    box-shadow: 0 6px 6px #2D3047;
+    outline: none;
+}
+
+.button-alt {
+    width: 140px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background: #CA2E55;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+}
