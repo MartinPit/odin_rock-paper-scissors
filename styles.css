@@ -16,6 +16,9 @@ body {
     text-align: center;
 }
 
+.footer button {
+    flex-shrink: 0;
+}
 
 .title {
     font-size: 48px;
@@ -30,6 +33,7 @@ body {
     padding: 10px 150px;
     gap: 50px;
     color: #2D3047;
+    min-width: 400px;
 }
 
 .info {
@@ -43,6 +47,7 @@ body {
     font-weight: bolder;
     padding-top: 50px;
     text-align: center;
+    width: 160px;
 }
 
 .game {
@@ -51,6 +56,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 150px;
+    min-width: 400px;
 }
 
 .result {
