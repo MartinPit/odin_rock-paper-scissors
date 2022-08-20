@@ -8,12 +8,13 @@ body {
     background-color: #FFE0B5;
 }
 
-.header {
+.header, .footer {
     justify-content: center;
     align-items: center;
     display: flex;
     padding: 20px 350px;
 }
+
 
 .title {
     font-size: 48px;
@@ -33,12 +34,14 @@ body {
 .info {
     font-size: 30px;
     font-weight: bolder;
+    text-align: center;
 }
 
 .points {
     font-size: 24px;
     font-weight: bolder;
     padding-top: 50px;
+    text-align: center;
 }
 
 .game {
@@ -51,12 +54,13 @@ body {
 
 .result {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
-    width: 150px;
+    width: 300px;
     gap: 10px;
     padding-bottom: 50px;
     color: #2D3047;
@@ -89,7 +93,10 @@ body {
     }
 }
 
-button {
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 140px;
     height: 60px;
     border: none;
@@ -103,26 +110,16 @@ button {
 }
 .button:focus {
     /* set time duration to your needs */
-    animation: gradient 100ms;
+    animation: gradient 150ms;
     background: #CA2E55;
     color: #fff;
     box-shadow: none;
 }
 
-.button-ai {'
-    width: 140px;
-    height: 60px;
-    border: none;
-    border-radius: 5px;
-    background: #fff;
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #666;
-    box-shadow: 0 6px 6px #2D3047;
-    outline: none;
-}
-
 .button-alt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 140px;
     height: 60px;
     border: none;
